@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <public publicId="urn:jboss:galleon:package:2.0" uri="galleon-package-2_0.xsd"/>
+    <public publicId="urn:jboss:galleon:provisioning:4.0" uri="galleon-provisioning-4_0.xsd"/>
+    <public publicId="urn:jboss:galleon:layer-spec:1.0" uri="galleon-layer-1_0.xsd"/>
+    <public publicId="urn:jboss:galleon:layer-spec:2.0" uri="galleon-layer-2_0.xsd"/>
+    <public publicId="urn:jboss:galleon:feature-pack:3.0" uri="galleon-feature-pack-3_0.xsd"/>
+    <public publicId="urn:jboss:galleon:feature-pack:2.0" uri="galleon-feature-pack-2_0.xsd"/>
+    <public publicId="urn:jboss:galleon:provisioning:3.0" uri="galleon-provisioning-3_0.xsd"/>
+    <public publicId="urn:jboss:galleon:package:1.0" uri="galleon-package-1_0.xsd"/>
+    <public publicId="urn:jboss:galleon:feature-pack:4.0" uri="galleon-feature-pack-4_0.xsd"/>
+    <public publicId="urn:jboss:galleon:feature-group:1.0" uri="galleon-feature-group-1_0.xsd"/>
+    <public publicId="urn:jboss:galleon:provisioned-state:3.0" uri="galleon-provisioned-state-3_0.xsd"/>
+    <public publicId="urn:jboss:galleon:package:3.0" uri="galleon-package-3_0.xsd"/>
+    <rewriteURI uriStartString="urn:jboss:galleon:" rewritePrefix="/home/wozza/code/OASIS-Catalog-Generator-XML-Schema-DTD-Resolver/test/schema/"/>
+</catalog>

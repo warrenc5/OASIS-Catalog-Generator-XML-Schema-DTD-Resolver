@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.0//EN" uri="slee-resource-adaptor-jar_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-resource-adaptor-jar_1_0.dtd" uri="slee-resource-adaptor-jar_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Service 1.0//EN" uri="slee-service_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-service_1_0.dtd" uri="slee-service_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.0//EN" uri="slee-sbb-jar_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-sbb-jar_1_0.dtd" uri="slee-sbb-jar_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Library 1.1//EN" uri="slee-library-jar_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-library-jar_1_1.dtd" uri="slee-library-jar_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN" uri="slee-resource-adaptor-type-jar_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd" uri="slee-resource-adaptor-type-jar_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.0//EN" uri="slee-resource-adaptor-type-jar_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_0.dtd" uri="slee-resource-adaptor-type-jar_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.0//EN" uri="slee-event-jar_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-event-jar_1_0.dtd" uri="slee-event-jar_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Profile Specification 1.1//EN" uri="slee-profile-spec-jar_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-profile-spec-jar_1_1.dtd" uri="slee-profile-spec-jar_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Deployable Unit 1.0//EN" uri="slee-deployable-unit_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-deployable-unit_1_0.dtd" uri="slee-deployable-unit_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Deployable Unit 1.1//EN" uri="slee-deployable-unit_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-deployable-unit_1_1.dtd" uri="slee-deployable-unit_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" uri="slee-event-jar_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-event-jar_1_1.dtd" uri="slee-event-jar_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Service 1.1//EN" uri="slee-service_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-service_1_1.dtd" uri="slee-service_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" uri="slee-resource-adaptor-jar_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd" uri="slee-resource-adaptor-jar_1_1.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE Profile Specification 1.0//EN" uri="slee-profile-spec-jar_1_0.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-profile-spec-jar_1_0.dtd" uri="slee-profile-spec-jar_1_0.dtd"/>
+    <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN" uri="slee-sbb-jar_1_1.dtd"/>
+    <system systemId="http://java.sun.com/dtd/slee-sbb-jar_1_1.dtd" uri="slee-sbb-jar_1_1.dtd"/>
+    <rewriteSystem systemIdStartString="http://java.sun.com/dtd/slee-" rewritePrefix="/home/wozza/code/OASIS-Catalog-Generator-XML-Schema-DTD-Resolver/test/dtd/"/>
+</catalog>
