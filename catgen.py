@@ -2,6 +2,7 @@
 import os
 import sys
 import re
+import argparse
 import xml.etree.ElementTree as etree
 #from lxml import etree
 
@@ -56,7 +57,7 @@ def find_common_prefix(namespaces):
 
     return ''.join(common)
 
-def main(directory, catalog_path):
+def main(directory, catalog_path, prefer_public=False):
     xsd_files = []
     dtd_files = []
     for dirpath, _, filenames in os.walk(directory):
@@ -109,7 +110,13 @@ def main(directory, catalog_path):
 
     catalog = []
     catalog.append('<?xml version="1.0" encoding="UTF-8"?>')
-    catalog.append('<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">')
+
+    # Build catalog element with optional preferPublic attribute
+    if prefer_public:
+        catalog.append('<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">')
+    else:
+        catalog.append('<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">')
+
     catalog.extend(catalog_entries)
 
     # Add rewrite entries for common prefixes
@@ -131,9 +138,24 @@ def main(directory, catalog_path):
     print(f"Catalog written to {catalog_path}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python script.py <xsd_directory> <catalog_prefix>")
-        sys.exit(1)
-    catalog_prefix = sys.argv[2]
-    catalog_path = f"{catalog_prefix}-catalog.xml"
-    main(sys.argv[1], catalog_path)
+    parser = argparse.ArgumentParser(
+        description='Generate OASIS XML Catalog from XSD and DTD files',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog='''
+Examples:
+  %(prog)s test/schema galleon
+  %(prog)s test/dtd slee --prefer-public
+        '''
+    )
+    parser.add_argument('directory',
+                        help='Directory containing XSD or DTD files')
+    parser.add_argument('catalog_prefix',
+                        help='Prefix for output catalog file (creates <prefix>-catalog.xml)')
+    parser.add_argument('--prefer-public',
+                        action='store_true',
+                        help='Set prefer="public" attribute on catalog element (prefer PUBLIC identifiers over SYSTEM)')
+
+    args = parser.parse_args()
+
+    catalog_path = f"{args.catalog_prefix}-catalog.xml"
+    main(args.directory, catalog_path, args.prefer_public)

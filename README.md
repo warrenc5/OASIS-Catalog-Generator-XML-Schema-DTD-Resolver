@@ -37,13 +37,14 @@ The `catgen.py` utility:
 ## Usage
 
 ```bash
-python3 catgen.py <directory> <catalog-prefix>
+python3 catgen.py <directory> <catalog-prefix> [--prefer-public]
 ```
 
 ### Parameters
 
 - `<directory>`: Path to the directory containing your XSD or DTD files
 - `<catalog-prefix>`: Name prefix for the output catalog (will create `<prefix>-catalog.xml`)
+- `--prefer-public`: (Optional) Set `prefer="public"` attribute on catalog element. When set, XML parsers will prefer PUBLIC identifiers over SYSTEM identifiers during resolution. Useful when PUBLIC identifiers are more stable than SYSTEM URLs.
 
 ### Examples
 
@@ -57,6 +58,10 @@ python3 catgen.py test/schema galleon-test
 # Generate a catalog for JAIN SLEE DTD files
 python3 catgen.py test/dtd slee-test
 # Creates: slee-test-catalog.xml
+
+# Generate a catalog with prefer="public" attribute
+python3 catgen.py test/dtd slee-test --prefer-public
+# Creates: slee-test-catalog.xml with prefer="public" attribute
 ```
 
 You can run both examples using:
