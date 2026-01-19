@@ -30,5 +30,5 @@
     <system systemId="http://java.sun.com/dtd/slee-profile-spec-jar_1_0.dtd" uri="slee-profile-spec-jar_1_0.dtd"/>
     <public publicId="-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN" uri="slee-sbb-jar_1_1.dtd"/>
     <system systemId="http://java.sun.com/dtd/slee-sbb-jar_1_1.dtd" uri="slee-sbb-jar_1_1.dtd"/>
-    <rewriteSystem systemIdStartString="http://java.sun.com/dtd/slee-" rewritePrefix="/home/wozza/code/OASIS-Catalog-Generator-XML-Schema-DTD-Resolver/test/dtd/"/>
+    <rewriteSystem systemIdStartString="http://java.sun.com/dtd/slee-" rewritePrefix="/home/wozza/code/OASIS-Catalog-Generator-XML-Schema-DTD-Resolver/"/>
 </catalog>

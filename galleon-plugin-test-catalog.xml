@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <public publicId="urn:wildfly:wildfly-feature-pack-tasks:3.0" uri="test/schema2/wildfly-feature-pack-tasks-3_0.xsd"/>
+    <public publicId="urn:wildfly:wildfly-feature-pack-tasks:3.2" uri="test/schema2/wildfly-feature-pack-tasks-3_2.xsd"/>
+    <public publicId="urn:wildfly:wildfly-feature-pack-tasks:3.1" uri="test/schema2/wildfly-feature-pack-tasks-3_1.xsd"/>
+    <rewriteURI uriStartString="urn:wildfly:wildfly-feature-pack-tasks:3." rewritePrefix="/home/wozza/code/OASIS-Catalog-Generator-XML-Schema-DTD-Resolver/"/>
+</catalog>
